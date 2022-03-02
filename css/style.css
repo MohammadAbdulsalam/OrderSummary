@@ -1,0 +1,109 @@
+/* Start Global Rules */
+:root {
+  --main-color: hsl(225, 100%, 94%);
+  --main-color-alt:hsl(245, 75%, 52%);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(../imgs/pattern-background-desktop.png);
+  background-color: var(--main-color);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width:1200px) {
+  body{
+    width: 1440px;
+  }
+}
+@media (max-width:767px) {
+  body{
+    width: 375px;
+  }
+}
+/* End Global Rules */
+/* Start Card */
+.card {
+  width: 451px;
+  height: 698px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 30px;
+}
+.card .image {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card .info {
+  text-align: center;
+  padding: 20px 43px;
+}
+.card .info .order {
+  font-weight: 900;
+}
+.card .info .first {
+  color: #747a90;
+  padding: 0 30px;
+}
+.card .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fe;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 13px;
+}
+.card .detail .playing {
+  display: inline-flex;
+  align-items: center;
+}
+.card .detail .playing .namesong {
+  flex-direction: column;
+  margin: 5px;
+}
+.card .detail .playing .namesong p {
+  margin:10px;
+  font-size: 16px;
+}
+.card .detail .playing .namesong p:first-child {
+  font-weight: 700;
+}
+.card .detail .playing .namesong p:last-child {
+  color: #747a90;
+}
+.card .detail .change:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card .info .proccedOrder {
+  display: flex;
+  flex-direction: column;
+}
+.card .info .proccedOrder .Proceed {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color-alt);
+  font-weight: 700;
+  margin: 40px 20px;
+  padding: 15px;
+  border-radius: 13px;
+  box-shadow: 0px 20px 15px 0px #dad9d9b5;
+}
+.card .info .proccedOrder .Proceed:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+.card .info .proccedOrder .Cancel {
+  text-decoration: none;
+  color: #747a90;
+  font-weight: 700;
+}
+.card .info .proccedOrder .Cancel:hover {
+  color: black;
+}
+/* End Card */
